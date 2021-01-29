@@ -4,9 +4,6 @@ pygame.init()
 
 
 # player
-class Player():
-    pass
-
 
 player_width = 100
 player_height = 100
