@@ -7,10 +7,10 @@ pygame.init()
 class Player():
     pass
 
+
 player_width = 100
 player_height = 100
-player = pygame.Rect(100, 100, 110, 120)
-
+player = pygame.Rect(100, 101, 12, 12)  # what is left?
 
 # screen
 screen_width = 1000
@@ -32,5 +32,6 @@ def game_loop():
         screen.fill((123, 25, 45))
         pygame.draw.rect(screen, (154, 222, 223), player)
         pygame.display.update()
+
 
 game_loop()
