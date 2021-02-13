@@ -1,6 +1,10 @@
 import pygame
+import time
 
 pygame.init()
+
+def main():
+    game_loop()
 
 # screen
 screen_width = 700
@@ -8,8 +12,7 @@ screen_height = 1000
 screen = pygame.display.set_mode((screen_width, screen_height))
 
 # planform, платформа - устанавливаем в самом нижу экрана, и по середине
-platform_width = 300
-platform_height = 50
+platform_width, platform_height  = 300, 50
 platform_left = (screen_width - platform_width) / 2
 platform_bottom = screen_height - platform_height
 platform_speed = 30
@@ -75,7 +78,8 @@ def moving_circle():
     if ball.left <= 0 or ball.right >= screen_width:
         ball_x_speed *= -1
     if ball.bottom >= screen_height or ball.top <= 0:
-        pygame.quit()
+        ball.center = (screen_width / 2, screen_height / 2)
+
 
     # collision ball with platform
     possible_distance_collision = 7
@@ -105,4 +109,4 @@ def moving_platform_left(platform):
     else:
         platform.x -= platform_speed
 
-game_loop()
+main()
