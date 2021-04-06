@@ -4,6 +4,8 @@ import time
 print('Hello From LocalRepositori!')
 print('Hello')
 
+value = 99000;
+
 pygame.init()
 
 def main():
