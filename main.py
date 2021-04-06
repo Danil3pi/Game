@@ -116,3 +116,5 @@ def moving_platform_left(platform):
         platform.x -= platform_speed
 
 main()
+
+# Hello, it's changes from GitHub.
