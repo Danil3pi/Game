@@ -2,6 +2,7 @@ import pygame
 import time
 
 print('Hello From LocalRepositori!')
+print('Hello')
 
 pygame.init()
 
