@@ -1,6 +1,8 @@
 import pygame
 import time
 
+print('Hello From LocalRepositori!')
+
 pygame.init()
 
 def main():
